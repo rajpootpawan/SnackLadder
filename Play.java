@@ -7,8 +7,14 @@ class Play
 		//user 1 added position varible
 		int position=0;
 
-		//user 2 added Random function to roll the dice
+
 		Random r=new Random();
+		//user4 added the while loop to  continue the game
+		while(position<=100)
+		{
+
+
+		//user 2 added Random function to roll the dice
 		int dice=r.nextInt(6);
 		dice=dice+1;
 
@@ -19,17 +25,23 @@ class Play
 
 		case 0:
 			System.out.println("No play");
+			position=0;
 		break;
 
 		case 1:
 			System.out.println("Snack");
+			if(position>=dice)
+			position=position-dice;
+
 		break;
 
 		case 2:
 			System.out.println("Ladder");
-		break;
+			if(position<=100-dice)
+			position=position+dice;
+			break;
 		}
-
+	}
 
 	}
 
