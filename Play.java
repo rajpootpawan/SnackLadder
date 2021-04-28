@@ -10,7 +10,7 @@ class Play
 
 		Random r=new Random();
 		//user4 added the while loop to  continue the game
-		while(position<=100)
+		while(position<100)
 		{
 
 
@@ -25,7 +25,6 @@ class Play
 
 		case 0:
 			System.out.println("No play");
-			position=0;
 		break;
 
 		case 1:
@@ -37,8 +36,10 @@ class Play
 
 		case 2:
 			System.out.println("Ladder");
+			//user 5 added code for exact position to be 100.
 			if(position<=100-dice)
 			position=position+dice;
+			System.out.println("current position "+position);
 			break;
 		}
 	}
