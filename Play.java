@@ -25,12 +25,14 @@ class Play
 
 		case 0:
 			System.out.println("No play");
+			System.out.println("current position "+position);
 		break;
 
 		case 1:
 			System.out.println("Snack");
 			if(position>=dice)
 			position=position-dice;
+			System.out.println("current position "+position); 
 
 		break;
 
@@ -42,6 +44,7 @@ class Play
 			System.out.println("current position "+position);
 			break;
 		}
+		System.out.println("current position is "+position +" player won the game");
 	}
 
 	}
